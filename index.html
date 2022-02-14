@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index_css.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="site-grid-container">
+        <div class="area header-grid-item">
+            <h1>Portfólio Sites HTML/CSS/JS</h1>
+        </div>
+        <div class="area aside-grid-item aside-flex-container">
+            <a href="#">
+                <button class="button" style="vertical-align:middle"><span>Site Pokemon API</span></button>
+            </a>
+            <a href="rick_morty.html">
+                <button class="button" style="vertical-align:middle"><span>Site Rick and Morty API</span></button>
+            </a>
+            <a href="">
+                <button class="button" style="vertical-align:middle"><span>Link3</span></button>
+            </a>
+        </div>
+        <div class="area main-grid-item main-flex-cotainer">
+            <div class="container-busca">
+                <div id="pesq_centr">
+                    <div>Pesquisar:</div>
+                    <input type="text" id="nome_pokemon">
+                </div>
+                <div id="btn_centr">
+                    <button id="btn" onclick="buscar_pokemon()">Buscar</button>
+                </div>
+            </div>
+            <div class="pokedex">
+                <div class="visor">
+                    <img width="220px" id="img_pokemon" src="" alt="">
+                </div>
+                <div class="botoes">
+                    <h2>Nome:</h2>
+                    <div id="nome"></div>
+                    <h2>Tipos:</h2>
+                    <span id="tipo"></span>
+                    <h2>Skills:</h2>
+                    <div id="skill"></div>
+                </div>
+            </div>
+        </div>
+        <div class="area footer-grid-item"></div>
+    </div>
+
+</body>
+
+</html>

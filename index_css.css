@@ -1,0 +1,158 @@
+/* Resets */
+html, body {
+    margin: 0px;
+}
+
+/* Layout */
+#site-grid-container {
+    background-color: rgb(141, 148, 148);
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 0.3fr 1fr;
+
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+.area {
+    margin: 2px;
+    background-color: white;
+}
+
+.header-grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    font-size: 25px;
+    color: white;
+    background-color: rgb(83, 80, 80);
+}
+.aside-grid-item{
+    grid-area: aside;
+    background-color: rgb(83, 80, 80);
+}
+.main-grid-item{
+    grid-area: main;
+}
+.footer-grid-item{
+    grid-area: footer;
+    background-color: rgb(83, 80, 80);
+}
+
+/* Areas */
+.aside-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-flex-cotainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-busca {
+    border: solid black 2px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 5px 10px 10px 10px;
+    width: 300px;
+    height: 80px;
+}
+
+#pesq_centr{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    align-items: center;
+}
+
+#nome_pokemon {
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+
+.pokedex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 2px;
+    background-color: rgb(194, 113, 7);
+    height: 560px;
+    width: 420px;
+    border-radius: 10px;
+}
+
+.visor {
+    margin-top: 10px;
+    height: 240px;
+    width: 240px;
+    background-color: rgb(157, 202, 202);
+    border: solid white 10px;
+}
+
+.botoes {
+    padding: 1px;
+    margin: 15px;
+    width: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    width: 290px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 370px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
